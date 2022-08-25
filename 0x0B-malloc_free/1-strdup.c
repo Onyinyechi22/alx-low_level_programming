@@ -18,21 +18,21 @@ char *_strdup(char *str)
 		return (NULL);
 
 	i = 0;
+
 	while (*str++)
 
 		i++;
 
 	len = i;
-	str = tmp;
 
+	str = tmp;
 	str_copy = malloc(len * sizeof(char) + 1);
 	if (str_copy == NULL)
 		return (NULL);
-
 	j = 0;
 	while (j < len)
 	{
-                str_copy[j] = str[j];
+		str_copy[j] = str[j];
 		j++;
 	}
 	str_copy[j] = '\0';
